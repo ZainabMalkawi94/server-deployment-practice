@@ -7,7 +7,7 @@ describe("API Server ", () => {
     it("getting data from home route /", async () => {
         const response = await request.get('/');
         expect(response.status).toEqual(200);
-        expect(response.text).toEqual("hello from home route!");
+        expect(response.text).toEqual("hello from home route");
     });
     it("handle 404 error", async () => {
         const response = await request.get('/abd');
